@@ -86,13 +86,28 @@
     <header class="fixed top-4 inset-x-4 z-50 flex justify-center">
         <nav
             class="header-glass w-full max-w-5xl h-16 px-6 flex items-center justify-between rounded-pill border-2 border-primary/20 shadow-header-nav">
-            <div class="flex items-center gap-2">
-                <div
-                    class="w-10 h-10 bg-primary organic-border flex items-center justify-center text-white shadow-tactile">
-                    <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+                        <div class="flex items-center gap-3 group cursor-pointer">
+                <div class="w-9 h-9 flex items-center justify-center relative">
+                    <svg class="w-full h-full" fill="none" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 30 C 16 20, 10 16, 13 6" fill="none" stroke="#059669" stroke-linecap="round" stroke-width="2.5"></path>
+                        <path d="M16 30 C 18 22, 24 18, 21 10" fill="none" stroke="#10b981" stroke-linecap="round" stroke-width="2"></path>
+                        <circle cx="13" cy="6" fill="#059669" r="3.5"></circle>
+                        <circle cx="21" cy="10" fill="#10b981" r="2.5"></circle>
+                        <circle cx="25" cy="18" fill="#34d399" r="1.5"></circle>
+                        <circle cx="8" cy="20" fill="#059669" r="2"></circle>
+                    </svg>
                 </div>
-                <span class="text-2xl font-black tracking-tighter text-slate-900">Spore</span>
+                <a href="/" class="flex items-baseline gap-1.5">
+                    <span class="text-2xl font-playful font-bold tracking-tight text-slate-900" style="font-family: 'Pacifico', cursive;">
+                        Spore
+                    </span>
+                    
+                    <span class="self-center transform translate-y-[1px] font-mono text-[8px] font-black text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-1.5 py-0.5 rounded-md uppercase tracking-widest select-none">
+                        Beta
+                    </span>
+                </a>
             </div>
+
 
             <div class="flex items-center gap-3">
                 <a role="menuitem"
@@ -128,7 +143,6 @@
             <h1 class="text-5xl md:text-7xl font-headline font-extrabold max-w-5xl leading-[1.1] mb-8 text-slate-900">
                 Data Intelligence <span class="script-text text-6xl md:text-8xl inline-block -rotate-2 ml-2">for
                     Everyone.</span> <br />
-                No SQL required.
             </h1>
             <p class="text-xl md:text-2xl text-slate-500 max-w-2xl mb-12 leading-relaxed font-light">Query databases in
                 natural language, materialize results locally, and analyze them in a sandboxed Python notebook.</p>
